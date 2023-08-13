@@ -35,6 +35,19 @@ public class Main {
         Viewing views = new Viewing();
         views.viewer();
 
+        //shop again
+        MoreShop more = new MoreShop();
+        more.shopmore();
+
+        views.viewerMore();
+
+        //checkout
+        Checkout checkout = new Checkout();
+
+        checkout.setCheckout("Wahyu","Ferryansyah","ID","jl. griya kasih","Medan",
+                "SU","22367","62812938742");
+
+        views.cekCheckout("Thank you. Your order has been received.");
 
         DriverSingleton.delay(5);
         DriverSingleton.closeObjectInstance();
